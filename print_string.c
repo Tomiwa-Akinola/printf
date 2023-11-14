@@ -18,7 +18,7 @@ int printf_string(va_list mag)
 		str = "(null)";
 		len = _strlen(str);
 		for (i = 0; i < len; i++)
-			_putchar (str[i]);
+			_putchar(str[i]);
 		return (len);
 	}
 	else

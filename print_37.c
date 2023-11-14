@@ -8,5 +8,5 @@
 int print_37(void)
 {
 	_putchar(37);
-	return (0);
+	return (1);
 }
