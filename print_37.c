@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_37 - prints percentage sign %
+ * print_37 - prints percentage sign
  * Return: int
  */
 
