@@ -7,7 +7,9 @@
 int _printf(const char * const format, ...)
 {
 	dsame p[] = {
-		{"%c", printf_char}, {"%s", printf_string}, {"%%", print_37}, {"%d", print_decimal}, {"%i", print_integer},
+		{"%c", printf_char}, {"%s", printf_string},
+		{"%%", print_37}, {"%d", print_decimal},
+		{"%i", print_integer},
 		{"%S", print_exc_string}, {"%p", print_pointer}
 	};
 
