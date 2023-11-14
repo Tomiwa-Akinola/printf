@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 Again:
 	while (format[i] == '\0')
 	{
-		y = 2;
+		y = 13;
 		while (y >= 0)
 		{
 			if (m[y].id[0] == format[i] && m[y].id[i] == format[i + 1])
