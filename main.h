@@ -2,6 +2,15 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <limits.h>
+
+typedef struct format
+{
+	char *id;
+	int (*f)();
+} match;
 
 int printf_char(va_list mag);
 int printf_string(va_list mag);
