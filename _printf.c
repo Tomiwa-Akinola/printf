@@ -9,7 +9,10 @@ int _printf(const char * const format, ...)
 	dsame p[] = {
 		{"%c", printf_char}, {"%s", printf_string},
 		{"%%", print_37}, {"%d", print_decimal},
-		{"%i", print_integer}, {"%r", print_rev}, {"%R", print_rot13},
+		{"%i", print_integer}, {"%b", print_binary},
+	{"%u", print_unsignedint}, {"%o", print_octal},
+	{"%x", print_hexa}, {"%X", print_hexad},
+	{"%r", print_rev}, {"%R", print_rot13},
 		{"%S", print_some_string}, {"%p", print_pointer}
 	};
 
