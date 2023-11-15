@@ -1,10 +1,11 @@
 #include "main.h"
 /**
  * _printf - is a function that selects the correct function to print.
+ *
  * @format: identifier to look for.
  * Return: the len of the string.
  */
-int _printf(const char * const format, ...)
+int _printf(const char *format, ...)
 {
 	dsame p[] = {
 		{"%c", printf_char}, {"%s", printf_string},
