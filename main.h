@@ -1,5 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
+#include <stdlib.h>
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>
@@ -15,8 +16,8 @@
 
 typedef struct format
 {
-	char *id;
-	int (*f)();
+	char *ph;
+	int (*function)();
 } dsame;
 
 int _putchar(char c);

@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _printf - is a function that selects the correct function to print.
- *
+ * _printf - function that selects the correct function to print.
  * @format: identifier to look for.
  * Return: the len of the string.
  */
@@ -10,8 +9,11 @@ int _printf(const char *format, ...)
 	dsame p[] = {
 		{"%c", printf_char}, {"%s", printf_string},
 		{"%%", print_37}, {"%d", print_decimal},
-		{"%i", print_integer},
-		{"%S", print_exc_string}, {"%p", print_pointer}
+		{"%i", print_integer}, {"%b", print_binary},
+		{"%u", print_unsignedint}, {"%o", print_octal},
+		{"%x", print_hexa}, {"%X", print_hexad},
+		{"%r", print_rev}, {"%R", print_rot13},
+		{"%S", print_some_string}, {"%p", print_pointer}
 	};
 
 	va_list mag;
